@@ -21,6 +21,10 @@
           GitHub
         </a>
       </div>
+      <div class="links">
+        <nuxt-link to="instafeed" class="button--green">Instafeed</nuxt-link>
+        <nuxt-link to="post" class="button--green">Blog post</nuxt-link>
+      </div>
     </div>
   </div>
 </template>

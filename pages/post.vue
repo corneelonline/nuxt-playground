@@ -21,9 +21,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .blogpost {
   padding: 50px 25%;
+  margin-bottom: 1rem;
 }
 p {
   margin-bottom: 1.5rem;
