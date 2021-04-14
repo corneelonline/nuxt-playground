@@ -19,13 +19,19 @@ export default {
     },
     image: {
       type: String,
-      default: 'https://www.corneelia-wall-art.online/corneelia-screenshot.png',
+      default: '',
     },
   },
 
   head() {
     return {
+      title: this.title,
       meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description,
+        },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
@@ -76,7 +82,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://www.corneelia-wall-art.online${this.path}`,
+          href: process.env.baseUrl + this.path,
         },
       ],
     }

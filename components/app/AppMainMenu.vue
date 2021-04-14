@@ -8,7 +8,7 @@
         <nuxt-link class="nav__link" to="instafeed">Instafeed</nuxt-link>
       </li>
       <li @click="hideMainMenu">
-        <nuxt-link class="nav__link" to="post">Blog post</nuxt-link>
+        <nuxt-link class="nav__link" to="blogpost">Blog post</nuxt-link>
       </li>
     </ul>
   </nav>
