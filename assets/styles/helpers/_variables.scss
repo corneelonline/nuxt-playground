@@ -1,0 +1,101 @@
+// ----------------------------------------------
+// Default font size for this project (16px)
+// ----------------------------------------------
+$browser-context: 16;
+
+// ----------------------------------------------
+// Sizes for media queries
+// ----------------------------------------------
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+:root {
+  // ----------------------------------------------
+  // Gutter settings
+  // ----------------------------------------------
+  --gutter-xxs: 5px;
+  --gutter-xs: 10px;
+  --gutter-sm: 15px;
+  --gutter-md: 30px;
+  --gutter-md-plus: 40px;
+  --gutter-lg: 60px;
+  --gutter-xl: 90px;
+  --gutter-xxl: 120px;
+  --gutter-grande: 180px;
+  --gutter-mucho-grande: 240px;
+
+  // ----------------------------------------------
+  // Color palette
+  // ----------------------------------------------
+  --color-white: #fff;
+  --color-black: #333;
+  --color-black-transparent: rgba(0, 0, 0, 0.6);
+  --color-gray-dark: #d6d6d6;
+  --color-gray: #efeeea;
+  --color-gray-light: #f8f6f5;
+  --color-blue: #1a86ab;
+  --color-yellow: #fff06d;
+  --color-yellow-dark: #ebd300;
+  --color-red: #f0513b;
+  --color-red-light: #ec7d6e;
+
+  // ----------------------------------------------
+  // Colors - default light-mode
+  // ----------------------------------------------
+  --color-background-body: var(--color-white);
+  --color-background-cloud-back: var(--color-gray-light);
+  --color-background-cloud-front: var(--color-gray);
+  --color-background-card: var(--color-white);
+  --color-background-figure: var(--color-white);
+  --color-background-screen: var(--color-white);
+  --color-background-header: var(--color-white);
+  --color-background-footer: var(--color-gray-dark);
+  --color-background-button: var(--color-yellow);
+  --color-background-button-hover: var(--color-yellow-dark);
+  --color-background-pre: var(--color-gray);
+  --color-background-ins: var(--color-gray);
+  --color-background-filter-body: var(--color-white);
+  --color-background-filter: var(--color-gray);
+  --color-background-filter-active: var(--color-yellow);
+  --color-background-overlay: var(--color-black-transparent);
+  --color-background-skeleton: var(--color-gray);
+  --color-background-input: var(--color-gray-light);
+  --color-background-lang-active: var(--color-black);
+
+  --color-text-screen: var(--color-white);
+  --color-text-input: var(--color-black);
+  --color-text-input-focus: var(--color-white);
+  --color-text-error: var(--color-red);
+  --color-link: var(--color-black);
+  --color-link-visited: var(--color-black);
+  --color-link-hover: var(--color-blue);
+  --color-text-main: var(--color-black);
+  --color-text-title: var(--color-black);
+  --color-text-button: var(--color-black);
+  --color-text-overlay: var(--color-white);
+  --color-text-lang-active: var(--color-white);
+
+  --color-border-button: var(--color-yellow);
+  --color-border-button-hover: var(--color-yellow-dark);
+  --color-border-error: var(--color-red);
+
+  // ----------------------------------------------
+  // Font vars
+  // ----------------------------------------------
+  --base-font-size: 100%;
+  --ff-header: 'Days One', sans-serif;
+  --ff-body: 'Quicksand', serif;
+  --fw-regular: 400;
+  --fw-normal: var(--fw-regular);
+  --fw-bold: 700;
+
+  // ----------------------------------------------
+  // Header settings
+  // ----------------------------------------------
+  --banner-height-xs: 120px;
+  --banner-height-md: 130px;
+  --banner-height-lg: 130px;
+}

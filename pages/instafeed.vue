@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Instagram Feed Marco</h1>
     <p>Dit krijg ik met het uitlezen van de JSON feed niet voor elkaar.</p>
   </div>

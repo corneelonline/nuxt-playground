@@ -1,0 +1,36 @@
+/* ----------------------------------------------
+ | Reset
+ | ----------------------------------------------
+ |
+ | Reset all styles to start with a clean slate.
+ |
+*/
+@import 'base/reset';
+
+/* ----------------------------------------------
+ | Helpers
+ | ----------------------------------------------
+ |
+ | The helpers/ folder gathers all Sass tools and helpers
+ | we’ll use across the project. Got a function? A mixin?
+ | Put it in there. This folder also contains a _variables.scss
+ | file which holds all global variables for the project.
+ |
+*/
+@import 'helpers/variables';
+@import 'helpers/keyframes';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+/* ----------------------------------------------
+ | Base
+ | ----------------------------------------------
+ |
+ | The base/ folder holds what we might call the boilerplate stuff for
+ | your project. In there, you might find some stuff dealing with typography,
+ | and, depending on the project, maybe some other files.
+ |
+*/
+@import 'base/typography';
+@import 'base/base';

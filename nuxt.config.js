@@ -6,7 +6,7 @@ export default {
   head: {
     title: 'nuxt-playground',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'nl',
     },
     meta: [
       { charset: 'utf-8' },
@@ -17,7 +17,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['@/assets/styles/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/prism', mode: 'client' }],
@@ -37,7 +37,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/style-resources',
   ],
+
+  // Make SCSS variables and styles globally available in the project
+  styleResources: {
+    scss: ['assets/styles/main.scss'],
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

@@ -1,0 +1,82 @@
+// ---------------------------------------------------------
+// Mixins
+// ---------------------------------------------------------
+
+// ------------------------------------------
+// Rem output with px fallback
+// ------------------------------------------
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+
+// ------------------------------------------
+// Container sizes
+// ------------------------------------------
+@mixin container {
+  padding: rem(50) rem(30);
+  @media (min-width: $sm) {
+    padding: rem(50) rem(60);
+  }
+  @media (min-width: $md) {
+    padding: rem(50) rem(85);
+  }
+  @media (min-width: $lg) {
+    padding: rem(50) rem(85);
+  }
+  @media (min-width: $xl) {
+    padding: rem(50) calc(50% - 500px);
+  }
+}
+
+@mixin container-narrow {
+  padding: rem(50) rem(30);
+  @media (min-width: $sm) {
+    padding: rem(50) rem(60);
+  }
+  @media (min-width: $md) {
+    padding: rem(50) calc(50% - 250px);
+  }
+}
+
+// ------------------------------------------
+// Button
+// ------------------------------------------
+@mixin button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background-button);
+  color: var(--color-text-button);
+  border: 2px solid var(--color-border-button);
+  border-radius: rem(4);
+  text-decoration: none;
+  font-family: var(--ff-header);
+  font-size: rem(14);
+  padding: rem(8) rem(24);
+
+  @media (min-width: $md) {
+    font-size: rem(16);
+  }
+}
+
+// ------------------------------------------
+// Button:hover
+// ------------------------------------------
+@mixin button-hover {
+  background-color: var(--color-background-button-hover);
+  border: 2px solid var(--color-border-button-hover);
+  transition: all 0.5s ease;
+}
+
+// ------------------------------------------
+// Drop shadow
+// ------------------------------------------
+@mixin drop-shadow {
+  box-sizing: border-box;
+  filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25));
+}
+@mixin drop-shadow-active {
+  box-sizing: border-box;
+  filter: drop-shadow(2px 4px 10px rgba(235, 211, 0, 0.25));
+}
