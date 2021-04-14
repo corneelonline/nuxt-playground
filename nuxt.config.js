@@ -1,3 +1,5 @@
+import getRoutes from './utils/getRoutes'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -129,11 +131,25 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap',
   ],
 
   // Make SCSS variables and styles globally available in the project
   styleResources: {
     scss: ['assets/styles/main.scss'],
+  },
+
+  sitemap: {
+    hostname: process.env.BASE_URL || 'http://localhost:3000',
+    gzip: true,
+    exclude: [
+      '/hello',
+      '/instafeed',
+      '/secret/**'
+    ],
+    routes() {
+      return getRoutes()
+    },
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
