@@ -33,6 +33,11 @@ export default {
           content: this.description,
         },
         {
+          hid: 'image',
+          name: 'image',
+          content: this.image,
+        },
+        {
           hid: 'twitter:title',
           name: 'twitter:title',
           content: this.title,
@@ -43,8 +48,8 @@ export default {
           content: this.description,
         },
         {
-          hid: 'twitter:image',
-          name: 'twitter:image',
+          hid: 'twitter:image:src',
+          name: 'twitter:image:src',
           content: this.image,
         },
         {
@@ -68,14 +73,9 @@ export default {
           content: this.image,
         },
         {
-          hid: 'og:image:secure_url',
-          property: 'og:image:secure_url',
-          content: this.image,
-        },
-        {
-          hid: 'og:image:alt',
-          property: 'og:image:alt',
-          content: this.title,
+          hid: 'og:url',
+          property: 'og:url',
+          content: process.env.baseUrl + this.path,
         },
       ],
       link: [
