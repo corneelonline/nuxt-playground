@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <h1>{{ page.title }}</h1>
-    <pre>{{ pageBlocks }}</pre>
     <section v-for="(block, index) in pageBlocks" :key="'block-' + index">
       <template
         v-if="
