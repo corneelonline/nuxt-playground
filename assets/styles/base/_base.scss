@@ -72,6 +72,16 @@ img {
   height: auto;
 }
 
+pre {
+  background-color: #eee;
+  padding: 2em;
+  overflow-x: scroll;
+}
+
+figcaption {
+  font-style: italic;
+}
+
 // ---------------------------------------------------------
 // basic classes
 // ---------------------------------------------------------
