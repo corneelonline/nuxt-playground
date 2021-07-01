@@ -5,6 +5,6 @@
       <Nuxt />
     </main>
     <AppFooter />
-    <AppDebugBar />
+    <UtilDebugBar />
   </div>
 </template>

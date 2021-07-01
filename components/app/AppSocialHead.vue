@@ -48,6 +48,16 @@ export default {
           content: this.description,
         },
         {
+          hid: 'twitter:site',
+          name: 'twitter:site',
+          content: '@TwitterAccount',
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: '@TwitterAccount',
+        },
+        {
           hid: 'twitter:image:src',
           name: 'twitter:image:src',
           content: this.image,
@@ -76,6 +86,16 @@ export default {
           hid: 'og:url',
           property: 'og:url',
           content: process.env.baseUrl + this.path,
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website',
+        },
+        {
+          hid: 'og:locale',
+          property: 'og:locale',
+          content: 'nl_NL',
         },
       ],
       link: [

@@ -3,7 +3,7 @@
     <a href="#main">Skip to main content</a>
     <AppLogo />
     <AppMenuToggler @showMainMenu="showMainMenu" />
-    <AppMainMenu @hideMainMenu="hideMainMenu" />
+    <MenuMain @hideMainMenu="hideMainMenu" />
   </header>
 </template>
 
