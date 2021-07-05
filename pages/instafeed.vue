@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// import axios from 'axios'
 // export default {
 //   async asyncData({ $axios }) {
 //     const instafeed = await $axios.$get(

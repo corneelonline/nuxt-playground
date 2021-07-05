@@ -1,6 +1,5 @@
 <template>
   <header class="banner" :class="{ active: menuVisible }">
-    <a href="#main">Skip to main content</a>
     <AppLogo />
     <AppMenuToggler @showMainMenu="showMainMenu" />
     <MenuMain @hideMainMenu="hideMainMenu" />

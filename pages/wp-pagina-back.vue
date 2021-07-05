@@ -39,13 +39,21 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  async asyncData({ $axios }) {
-    const result = await $axios({
-      method: 'POST',
-      url: 'https://wpheadless.corneel.online/graphql',
-      data: {
-        query: `
+  data() {
+    return {
+      page: '',
+      pageBlocks: [],
+    }
+  },
+  async mounted() {
+    try {
+      var result = await axios({
+        method: 'POST',
+        url: 'https://wpheadless.corneel.online/graphql',
+        data: {
+          query: `
             {
               pageBy(uri: "marco-testpagina") {
                 title
@@ -73,13 +81,12 @@ export default {
                 }
               }
             }`,
-      },
-    })
-    const page = result.data.data.pageBy
-    const pageBlocks = result.data.data.pageBy.acfFlexibleContent.pageBlocks
-    return {
-      page,
-      pageBlocks,
+        },
+      })
+      this.page = result.data.data.pageBy
+      this.pageBlocks = result.data.data.pageBy.acfFlexibleContent.pageBlocks
+    } catch (error) {
+      console.error(error)
     }
   },
 }

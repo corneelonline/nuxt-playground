@@ -71,10 +71,6 @@ export default {
     background: var(--color-text-main);
     transition: 0.1s all ease-in;
 
-    &:nth-child(2) {
-      width: 80%;
-    }
-
     &:last-child {
       margin-bottom: 0;
     }

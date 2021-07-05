@@ -5,6 +5,7 @@
     <span class="debug-md">MD</span>
     <span class="debug-lg">LG</span>
     <span class="debug-xl">XL</span>
+    <span class="debug-xxl">XXL</span>
   </div>
 </template>
 
@@ -39,6 +40,9 @@ export default {
   }
   @media (min-width: $xl) {
     background: #d9f2d9;
+  }
+  @media (min-width: $xxl) {
+    background: #ffcc99;
   }
 }
 
@@ -77,6 +81,15 @@ export default {
 .debug-xl {
   display: none;
   @media (min-width: $xl) {
+    display: block;
+  }
+  @media (min-width: $xxl) {
+    display: none;
+  }
+}
+.debug-xxl {
+  display: none;
+  @media (min-width: $xxl) {
     display: block;
   }
 }
